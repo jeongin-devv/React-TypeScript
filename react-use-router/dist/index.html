@@ -1,0 +1,165 @@
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/babel-loader/lib/index.js):
+  SyntaxError: /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/html-webpack-plugin/default_index.ejs: Unexpected token (1:0)
+  
+  > 1 | <!DOCTYPE html>
+      | ^
+    2 | <html><head><meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="vendors.bundle.js"></script><script defer src="app.bundle.js"></script></head>
+    3 |   <head>
+    4 |     <meta charset="utf-8">
+      at instantiate (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:72:32)
+      at constructor (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:358:12)
+      at Parser.raise (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:3341:19)
+      at Parser.unexpected (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:3379:16)
+      at Parser.parseExprAtom (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:13083:24)
+      at Parser.parseExprAtom (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:8041:20)
+      at Parser.parseExprSubscripts (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12650:23)
+      at Parser.parseUpdate (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12629:21)
+      at Parser.parseMaybeUnary (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12600:23)
+      at Parser.parseMaybeUnaryOrPrivate (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12394:61)
+  ModuleBuildError: Module build failed (from ./node_modules/babel-loader/lib/index.js):
+  SyntaxError: /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/html-webpack-plugin/default_index.ejs: Unexpected token (1:0)
+  
+  > 1 | <!DOCTYPE html>
+      | ^
+    2 | <html>
+    3 |   <head>
+    4 |     <meta charset="utf-8">
+      at instantiate (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:72:32)
+      at constructor (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:358:12)
+      at Parser.raise (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:3341:19)
+      at Parser.unexpected (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:3379:16)
+      at Parser.parseExprAtom (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:13083:24)
+      at Parser.parseExprAtom (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:8041:20)
+      at Parser.parseExprSubscripts (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12650:23)
+      at Parser.parseUpdate (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12629:21)
+      at Parser.parseMaybeUnary (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12600:23)
+      at Parser.parseMaybeUnaryOrPrivate (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/@babel/parser/lib/index.js:12394:61)
+      at processResult (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/webpack/lib/NormalModule.js:758:19)
+      at /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/webpack/lib/NormalModule.js:860:5
+      at /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/loader-runner/lib/LoaderRunner.js:400:11
+      at /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/loader-runner/lib/LoaderRunner.js:252:18
+      at context.callback (/Users/jeongin/Desktop/React-Study/react-use-router/node_modules/loader-runner/lib/LoaderRunner.js:124:13)
+      at /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/babel-loader/lib/index.js:59:103
+  
+  - index.js:72 instantiate
+    [react-use-router]/[@babel]/parser/lib/index.js:72:32
+  
+  - index.js:358 constructor
+    [react-use-router]/[@babel]/parser/lib/index.js:358:12
+  
+  - index.js:3341 Parser.raise
+    [react-use-router]/[@babel]/parser/lib/index.js:3341:19
+  
+  - index.js:3379 Parser.unexpected
+    [react-use-router]/[@babel]/parser/lib/index.js:3379:16
+  
+  - index.js:13083 Parser.parseExprAtom
+    [react-use-router]/[@babel]/parser/lib/index.js:13083:24
+  
+  - index.js:8041 Parser.parseExprAtom
+    [react-use-router]/[@babel]/parser/lib/index.js:8041:20
+  
+  - index.js:12650 Parser.parseExprSubscripts
+    [react-use-router]/[@babel]/parser/lib/index.js:12650:23
+  
+  - index.js:12629 Parser.parseUpdate
+    [react-use-router]/[@babel]/parser/lib/index.js:12629:21
+  
+  - index.js:12600 Parser.parseMaybeUnary
+    [react-use-router]/[@babel]/parser/lib/index.js:12600:23
+  
+  - index.js:12394 Parser.parseMaybeUnaryOrPrivate
+    [react-use-router]/[@babel]/parser/lib/index.js:12394:61
+  
+  - ModuleBuildError: Module build failed (from ./node_modules/babel-loader/lib/index.js):
+  
+  - SyntaxError: /Users/jeongin/Desktop/React-Study/react-use-router/node_modules/html-webpack-plugin/default_index.ejs: Unexpected token (1:0)
+  
+  - > 1 | <!DOCTYPE html>
+  
+  -     | ^
+  
+  -   2 | <html>
+  
+  -   3 |   <head>
+  
+  -   4 |     <meta charset="utf-8">
+  
+  - index.js:72 instantiate
+    [react-use-router]/[@babel]/parser/lib/index.js:72:32
+  
+  - index.js:358 constructor
+    [react-use-router]/[@babel]/parser/lib/index.js:358:12
+  
+  - index.js:3341 Parser.raise
+    [react-use-router]/[@babel]/parser/lib/index.js:3341:19
+  
+  - index.js:3379 Parser.unexpected
+    [react-use-router]/[@babel]/parser/lib/index.js:3379:16
+  
+  - index.js:13083 Parser.parseExprAtom
+    [react-use-router]/[@babel]/parser/lib/index.js:13083:24
+  
+  - index.js:8041 Parser.parseExprAtom
+    [react-use-router]/[@babel]/parser/lib/index.js:8041:20
+  
+  - index.js:12650 Parser.parseExprSubscripts
+    [react-use-router]/[@babel]/parser/lib/index.js:12650:23
+  
+  - index.js:12629 Parser.parseUpdate
+    [react-use-router]/[@babel]/parser/lib/index.js:12629:21
+  
+  - index.js:12600 Parser.parseMaybeUnary
+    [react-use-router]/[@babel]/parser/lib/index.js:12600:23
+  
+  - index.js:12394 Parser.parseMaybeUnaryOrPrivate
+    [react-use-router]/[@babel]/parser/lib/index.js:12394:61
+  
+  - NormalModule.js:758 processResult
+    [react-use-router]/[webpack]/lib/NormalModule.js:758:19
+  
+  - NormalModule.js:860 
+    [react-use-router]/[webpack]/lib/NormalModule.js:860:5
+  
+  - LoaderRunner.js:400 
+    [react-use-router]/[loader-runner]/lib/LoaderRunner.js:400:11
+  
+  - LoaderRunner.js:252 
+    [react-use-router]/[loader-runner]/lib/LoaderRunner.js:252:18
+  
+  - LoaderRunner.js:124 context.callback
+    [react-use-router]/[loader-runner]/lib/LoaderRunner.js:124:13
+  
+  - index.js:59 
+    [react-use-router]/[babel-loader]/lib/index.js:59:103
+  
+  - child-compiler.js:169 
+    [react-use-router]/[html-webpack-plugin]/lib/child-compiler.js:169:18
+  
+  - Compiler.js:551 finalCallback
+    [react-use-router]/[webpack]/lib/Compiler.js:551:5
+  
+  - Compiler.js:577 
+    [react-use-router]/[webpack]/lib/Compiler.js:577:11
+  
+  - Compiler.js:1196 
+    [react-use-router]/[webpack]/lib/Compiler.js:1196:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [react-use-router]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1192 
+    [react-use-router]/[webpack]/lib/Compiler.js:1192:33
+  
+  - Compilation.js:2787 finalCallback
+    [react-use-router]/[webpack]/lib/Compilation.js:2787:11
+  
+  - Compilation.js:3092 
+    [react-use-router]/[webpack]/lib/Compilation.js:3092:11
+  
+  
+</pre>
