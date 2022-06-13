@@ -1,4 +1,6 @@
 * linguist-documentation=false
 * linguist-vendored=false
+*.jsx linguist-detectable=true
+*.tsx linguist-detectable=true
 *.html linguist-detectable=false
 *.css linguist-detectable=false
