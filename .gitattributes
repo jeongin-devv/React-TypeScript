@@ -2,10 +2,10 @@
 * linguist-vendored=false
 
 *.jsx linguist-detectable=true
-*.jsx linguist-language=Javascript
+*.jsx linguist-language=JavaScript
 
 *.tsx linguist-detectable=true
-*.tsx linguist-language=Typescript
+*.tsx linguist-language=TypeScript
 
 *.html linguist-detectable=false
 *.css linguist-detectable=false
