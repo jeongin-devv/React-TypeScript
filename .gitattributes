@@ -1,6 +1,11 @@
 * linguist-documentation=false
 * linguist-vendored=false
+
 *.jsx linguist-detectable=true
+*.jsx linguist-language=Javascript
+
 *.tsx linguist-detectable=true
+*.tsx linguist-language=Typescript
+
 *.html linguist-detectable=false
 *.css linguist-detectable=false
