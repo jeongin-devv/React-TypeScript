@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { useCallback } from 'react';
-import { useLocalStore, useObserver } from 'mobx-react';
+import { useLocalStore, useObserver, observer, useLocalObservable } from 'mobx-react';
 import { action } from 'mobx';
-import { postStore, userStore } from './Store';
+import { postStore, userStore } from './Store/Store';
+import { Basket } from './Store/Basket';
+import { counterStore } from './Store/CounterStore';
 
 interface LocalStore {
   name: string;
@@ -11,8 +13,8 @@ interface LocalStore {
   onChangePassword: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const App = () => {
-  const state = useLocalStore(()=> ({
+const App = observer(() => {
+  const state = useLocalObservable(()=> ({
     name: '',
     password: '',
     onChangeName: action(function onChangeName(this: LocalStore, e: React.ChangeEvent<HTMLInputElement>) {
@@ -35,7 +37,7 @@ const App = () => {
     userStore.logOut();
   }, []);
 
-  return useObserver(() => (
+  return (
     <div>
       {userStore.isLoggedIn
         ? <div>로그인 중</div>
@@ -51,7 +53,7 @@ const App = () => {
         <input value={state.password} type="password" onChange={state.onChangePassword} />
       </div>
     </div>
-  ));
-}
+  );
+})
 
 export default App;

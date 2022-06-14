@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "experimentalDecorators": true,
     "strict": true,
     "lib": [
       "es5",
@@ -9,6 +10,7 @@
       "es2020",
       "dom"
     ],
+    "target": "ES5", 
     "jsx": "react",
     "esModuleInterop": true,
   }
