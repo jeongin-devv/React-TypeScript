@@ -19,4 +19,19 @@ tsconfig.json
     "lib": ["ES6", "DOM"]
   }
 }
+
+{
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "outDir": "build",
+    "esModuleInterop": true,
+    "target": "ES6",
+    "lib": ["ES6", "DOM"],
+    "strict": true,
+    // "allowJs": true,
+    // "module": "CommonJS",
+  }
+}
 ```
