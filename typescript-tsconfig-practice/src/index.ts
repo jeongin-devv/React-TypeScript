@@ -42,6 +42,8 @@ class Blockchain {
   }
   public getBlocks(){
     // return this.blocks;
+    // private 값을 직접 내보내는 경우는 없어야 한다.
+    // 스프레드 연산자를 사용하여, 배열을 복사하여 리턴
     return [...this.blocks];
   }
 }
