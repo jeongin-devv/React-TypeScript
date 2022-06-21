@@ -23,8 +23,8 @@ const MainRouter = () => {
         {path:'', element: <DefaultPost />},
         {path:':id', element: <Post />},
       ]
-    }
+    },
   ])
-}
+};
 
 export default MainRouter;
