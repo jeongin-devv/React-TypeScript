@@ -1,1 +1,3 @@
-# React, TypeScript Study
+# Skill-Practice
+
+A Space to record Skill Practice
