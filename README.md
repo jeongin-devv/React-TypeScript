@@ -1,3 +1,3 @@
 # Skill-Practice
 
-A space to record what you have studied
+A Space to record Skill Practice
