@@ -19,9 +19,7 @@ const ButtonComponent = observer(() => {
     link.style.display = 'none';
     link.href = image;
     link.download = 'PaintJS[download]';
-    // document.body.appendChild(link);
     link.click();
-    // document.body.removeChild(link);
   };
   return (
     <div className="controls__btns">

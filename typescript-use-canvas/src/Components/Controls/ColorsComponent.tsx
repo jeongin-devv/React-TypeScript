@@ -18,7 +18,10 @@ const ColorsComponent = observer(() => {
   ];
 
   const colorHandler = (color : string) => {
-    canvasStore.canvasProps.color = color;
+    const props = {
+      color,
+    };
+    canvasStore.setCanvasProps(props);
   };
 
   return (

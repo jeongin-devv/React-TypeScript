@@ -22,7 +22,10 @@ const RangeComponent = observer(() => {
   };
 
   const rangeHandler = (event : React.ChangeEvent<HTMLInputElement>) => {
-    canvasStore.canvasProps.lineWidth = parseFloat(event.target.value);
+    const props = {
+      lineWidth: parseFloat(event.target.value),
+    };
+    canvasStore.setCanvasProps(props);
   };
 
   return (
