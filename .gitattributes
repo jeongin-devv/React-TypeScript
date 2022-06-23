@@ -1,5 +1,3 @@
-# * linguist-documentation=false
-# * linguist-vendored=false
 
 *.jsx linguist-detectable=true
 *.jsx linguist-language=JavaScript
