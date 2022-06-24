@@ -17,11 +17,22 @@ const ColorsComponent = observer(() => {
     '#5856D6',
   ];
 
-  const colorHandler = (color : string) => {
+  const disabledBorder = () => {
+    const colorNodes = document.querySelectorAll('.controls__color');
+    colorNodes.forEach((color) => {
+      const target = color as HTMLElement;
+      target.style.border = 'none';
+    });
+  };
+
+  const colorHandler = (event:React.MouseEvent, color : string) => {
     const props = {
       color,
     };
     canvasStore.setCanvasProps(props);
+    disabledBorder();
+    const target = event.target as HTMLElement;
+    target.style.border = '2px solid black';
   };
 
   return (
@@ -32,7 +43,7 @@ const ColorsComponent = observer(() => {
           className="controls__color"
           style={{ backgroundColor: color }}
           aria-hidden="true"
-          onClick={() => colorHandler(color)}
+          onClick={(event) => colorHandler(event, color)}
         />
       ))}
     </div>
