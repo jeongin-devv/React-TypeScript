@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-
-type Content = {
-  contents?:string;
-}
+import { LoginHeaderContentType } from './LoginType';
 
 export const LoginHeaderWrap = styled.div`
   margin: 90px 0px;
@@ -12,7 +9,7 @@ export const LoginHeaderWrap = styled.div`
   align-items: center;
 `;
 
-export const LoginHeaderTitle = styled.h1<Content>`
+export const LoginHeaderTitle = styled.h1<LoginHeaderContentType>`
   margin-bottom: 20px;
   font-size: 25px;
 
@@ -21,7 +18,7 @@ export const LoginHeaderTitle = styled.h1<Content>`
   }
 `;
 
-export const LoginHeaderText = styled.div<Content>`
+export const LoginHeaderText = styled.div<LoginHeaderContentType>`
   width: 60%;
   opacity: 0.7;
 
@@ -52,14 +49,17 @@ export const LoginFormWrap = styled.form`
   }
 
   & input:focus {
-    border-color: var(--yellow);
+    border-color: yellow;
   }
 
   & input[type="submit"] {
-    background-color: var(--yellow);
+    background-color: yellow;
     cursor: pointer;
     padding: 20px 0px;
-    border-radius: 5px;  
+    border-radius: 5px;
+    :before {
+      value: 'Log In'
+    } 
   }
 
   & span {
