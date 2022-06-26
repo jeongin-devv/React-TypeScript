@@ -1,8 +1,10 @@
 import React from 'react';
 import { RouteObject, useRoutes } from 'react-router-dom';
 import { RootPath as path } from './RootPath';
+import Login from '../Pages/Login/Login';
+import FriendsRoute from './Routes/FriendsRoute';
 
-const rootElement = <div />;
+const rootElement = <Login />;
 
 const RootRoute : RouteObject = {
   path,
@@ -11,6 +13,7 @@ const RootRoute : RouteObject = {
 
 const RootRouter = () => useRoutes([
   RootRoute,
+  FriendsRoute,
 ]);
 
 export default RootRouter;

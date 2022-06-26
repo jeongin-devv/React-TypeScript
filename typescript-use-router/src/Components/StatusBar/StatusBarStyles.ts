@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const StatusBarWrap = styled.div`
   display: flex;
   justify-content: center;
-  padding: 5px 3px;
+  padding: 10px 5px 10px 5px;
+  height: 30px;
+  margin-bottom: 10px;
 
   & div {
     width: 33%;
@@ -12,7 +14,11 @@ export const StatusBarWrap = styled.div`
 
 export const StatusBarNetworksWrap = styled.div`
   & span {
+    float:left;
     margin-right: 5px;
+  }
+  & i {
+    float:left;
   }
 `;
 

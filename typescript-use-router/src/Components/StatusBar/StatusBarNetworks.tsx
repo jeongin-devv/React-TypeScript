@@ -7,7 +7,6 @@ const StatusBarNetworks = () => {
     <StatusBarNetworksWrap>
       <span>{statusText}</span>
       <i className="fas fa-wifi" />
-      {/* <i className="fa-solid fa-globe" /> */}
     </StatusBarNetworksWrap>
   );
 };
