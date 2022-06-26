@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginHeader from './LoginHeader';
+import LoginForm from './LoginForm';
 
 const Index = () => {
   const text = 'd';
@@ -22,13 +23,7 @@ const Index = () => {
       </div>
 
       <LoginHeader />
-
-      <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number" />
-        <input name="password" type="password" placeholder="Password" />
-        <input type="submit" value="Log In" />
-        <span>Find Kokoa Account or Password</span>
-      </form>
+      <LoginForm />
 
       <div id="no-mobile">
         <span>Your screen is too big ㅠㅠ</span>
