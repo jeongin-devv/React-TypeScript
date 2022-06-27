@@ -16,6 +16,15 @@ export const UserElementRightColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  
+  & i {
+    margin-left: 10px;
+  }
+
+  & .time {
+    margin-bottom: 10px;
+    display: block;
+  }
 `;
 
 export const UserElementImg = styled.img`
@@ -38,6 +47,7 @@ export const UserElementImgSm = styled(UserElementImg)`
 
 export const UserElementName = styled.div`
   & h4 {
+    float: left;
     font-weight: 600;
     font-size: 22px;
   }
@@ -51,7 +61,14 @@ export const UserElementName = styled.div`
 
 export const UserElementNameNonBold = styled.div`
   & h4 {
+    text-align: left;
     font-size: 22px;
     font-weight: 400;
+  }
+
+  & h6 {
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
   }
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.span`
+export const Badge = styled.span`
   background-color: tomato;
   width: 30px;
   height: 30px;
@@ -10,4 +10,8 @@ export default styled.span`
   align-items: center;
   color: white;
   font-weight: 600;
+`;
+
+export const CommonWrap = styled.main`
+  padding: 0px 25px;
 `;

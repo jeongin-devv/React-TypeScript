@@ -1,23 +1,16 @@
 import React from 'react';
-import {
-  UserElementWrap,
-  UserElementLeftColumn, UserElementRightColumn,
-  UserElementImgXL, UserElementName,
-} from '../../Components/User/User';
+import FriendsProfile from '../../Components/User/User';
 
-export type UserElementProps = {
-  username:string;
+export type ProfileProps = {
+  name:string;
   src:string;
 }
 
-export default ({ username, src } : UserElementProps) => (
-  <UserElementWrap>
-    <UserElementLeftColumn>
-      <UserElementImgXL src={src} />
-      <UserElementName>
-        <h4>{username}</h4>
-      </UserElementName>
-    </UserElementLeftColumn>
-    <UserElementRightColumn />
-  </UserElementWrap>
+export default ({ name, src } : ProfileProps) => (
+  <FriendsProfile
+    type="Profile"
+    count={0}
+    name={name}
+    src={src}
+  />
 );
