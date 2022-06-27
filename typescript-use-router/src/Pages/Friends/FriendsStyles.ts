@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const FriendsWrap = styled.div`
-  padding: 0px 25px;
-`;
-
 export const FriendNoticeWrap = styled.div`
   text-align: center;
   display: block;
@@ -18,4 +14,21 @@ export const FriendNoticeWrap = styled.div`
     margin-right: 5px;
     margin-left: 5px;
   }
+`;
+
+export const FriendChannelWrap = styled.div`
+  margin-top: 25px;
+  border-top: 1px solid gray;
+  padding-top: 15px;
+`;
+
+export const FriendChannelHeader = styled.div`
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+`;
+
+export const FriendsListDivider = styled.div`
+  margin-bottom: 20px;
 `;

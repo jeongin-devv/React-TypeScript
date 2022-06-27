@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import Badge from '../Common/BadgeStyles';
+import { Badge } from '../Common/CommonStyles';
 
 type Props = {
   count: number;

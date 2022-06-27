@@ -1,14 +1,12 @@
 import React from 'react';
-import BadgeWrap from './BadgeStyles';
+import { Badge } from './CommonStyles';
 
 type BadgeProps = {
-  count: number;
+  count: number | undefined;
 }
 
-const Badge = ({ count } : BadgeProps) => (
-  <BadgeWrap>
+export default ({ count } : BadgeProps) => (
+  <Badge>
     {count}
-  </BadgeWrap>
+  </Badge>
 );
-
-export default Badge;
