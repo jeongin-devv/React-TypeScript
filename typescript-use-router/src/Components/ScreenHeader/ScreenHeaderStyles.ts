@@ -31,3 +31,39 @@ export default styled.header`
     animation: ${rotateCog} 1s linear infinite;
   }
 `;
+
+export const ChatScreenWrap = styled.header`
+  padding: 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & div {
+    width: 33%;
+  }
+
+  & h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  & div:first-child {
+    margin-right: auto;  
+    text-align: left;
+  }
+
+  & div:nth-child(2) {
+    text-align: center;
+  }
+
+  & div:last-child {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & div span:last-child {
+    margin-left: 20px;
+  }
+`;

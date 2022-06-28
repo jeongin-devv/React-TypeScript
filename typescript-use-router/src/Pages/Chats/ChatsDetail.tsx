@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ChatsDetail = () => (
-  <div>ChatsDetail</div>
+  <div>dafs</div>
 );
 
 export default ChatsDetail;

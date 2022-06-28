@@ -1,5 +1,6 @@
 import React from 'react';
-import ScreenHeaderWrap from './ScreenHeaderStyles';
+import { Link } from 'react-router-dom';
+import ScreenHeaderWrap, { ChatScreenWrap } from './ScreenHeaderStyles';
 
 type ScreenHeaderProps = {
   title : string;
@@ -28,6 +29,23 @@ const ScreenHeader = ({ title } : ScreenHeaderProps) => (
       <ButtonList title={title} />
     </div>
   </ScreenHeaderWrap>
+);
+
+export const ChatScreenHeader = ({ title } : ScreenHeaderProps) => (
+  <ChatScreenWrap>
+    <div>
+      <Link to="/">
+        <i className="fas fa-angle-left fa-3x" />
+      </Link>
+    </div>
+    <div>
+      <h1>{title}</h1>
+    </div>
+    <div>
+      <span><i className="fas fa-search fa-lg" /></span>
+      <span><i className="fas fa-bars fa-lg" /></span>
+    </div>
+  </ChatScreenWrap>
 );
 
 export default ScreenHeader;
