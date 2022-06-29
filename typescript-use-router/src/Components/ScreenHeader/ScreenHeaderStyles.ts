@@ -36,6 +36,7 @@ export const ChatScreenWrap = styled.header`
   padding: 25px;
   margin-bottom: 15px;
   display: flex;
+  background-color: skyblue;
   align-items: center;
   justify-content: center;
 

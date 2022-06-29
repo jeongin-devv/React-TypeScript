@@ -7,6 +7,7 @@ import StatusBar from './Components/StatusBar/StatusBar';
 import Navigation from './Components/Navigation/Navigation';
 import ScreenHeader, { ChatScreenHeader } from './Components/ScreenHeader/ScreenHeader';
 import './App.css';
+import ChatsWindow from './Pages/Chats/ChatsWindow';
 
 type NavigationState = boolean;
 
@@ -19,19 +20,27 @@ const App = () => {
   const location = useLocation();
   React.useEffect(() => {
     const { pathname } = location;
-    setNavigationState(pathname !== '/');
+    setNavigationState(pathname !== '/' && !pathname.includes('chatsdetail'));
     setScreenHeaderState(menuList.includes(pathname));
     setLocationState(pathname);
   }, [location]);
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={
+        locationState.includes('chatsdetail')
+          ? { backgroundColor: 'skyblue' }
+          : { backgroundColor: 'white' }
+      }
+    >
       <StatusBar />
-      {screenHeaderState && <ScreenHeader title={location.pathname} />}
+      {screenHeaderState && <ScreenHeader title={locationState} />}
       {locationState.includes('chatsdetail') && <ChatScreenHeader title="Haze" /> }
       <RootRouter />
       <Screening />
       {navigationState && <Navigation />}
+      {locationState.includes('chatsdetail') && <ChatsWindow /> }
     </div>
   );
 };
