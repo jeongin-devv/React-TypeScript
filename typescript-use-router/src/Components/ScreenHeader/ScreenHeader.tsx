@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ScreenHeaderWrap, { ChatScreenWrap } from './ScreenHeaderStyles';
 
 type ScreenHeaderProps = {
@@ -31,21 +31,28 @@ const ScreenHeader = ({ title } : ScreenHeaderProps) => (
   </ScreenHeaderWrap>
 );
 
-export const ChatScreenHeader = ({ title } : ScreenHeaderProps) => (
-  <ChatScreenWrap>
-    <div>
-      <Link to="/">
-        <i className="fas fa-angle-left fa-3x" />
-      </Link>
-    </div>
-    <div>
-      <h1>{title}</h1>
-    </div>
-    <div>
-      <span><i className="fas fa-search fa-lg" /></span>
-      <span><i className="fas fa-bars fa-lg" /></span>
-    </div>
-  </ChatScreenWrap>
-);
+export const ChatScreenHeader = ({ title } : ScreenHeaderProps) => {
+  const history = useNavigate();
+  const backbuttonHandler = (event: React.MouseEvent) => {
+    event.preventDefault();
+    history(-1);
+  };
+  return (
+    <ChatScreenWrap>
+      <div>
+        <button type="button" onClick={backbuttonHandler}>
+          <i className="fas fa-angle-left fa-3x" />
+        </button>
+      </div>
+      <div>
+        <h1>{title}</h1>
+      </div>
+      <div>
+        <span><i className="fas fa-search fa-lg" /></span>
+        <span><i className="fas fa-bars fa-lg" /></span>
+      </div>
+    </ChatScreenWrap>
+  );
+};
 
 export default ScreenHeader;

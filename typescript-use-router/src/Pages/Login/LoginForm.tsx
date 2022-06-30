@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 import { LoginFormWrap } from './LoginStyles';
 
 const LoginForm = () => {
+  const location = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const {
@@ -25,10 +28,18 @@ const LoginForm = () => {
   const submitHandler = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     event.stopPropagation();
-
     // eslint-disable-next-line no-useless-escape
-    // const regEmail
-    // = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+    const regEmail = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+    if (regEmail.test(username)) {
+      location('/friends');
+    } else {
+      Swal.fire({
+        title: 'Failed',
+        text: 'Check your email form',
+        icon: 'error',
+        confirmButtonText: 'Cancle',
+      });
+    }
   };
 
   return (

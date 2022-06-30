@@ -102,8 +102,9 @@ export const ChatsWindow = styled.form`
   transition: transform 0.3s ease-in-out;
 
   &:focus-within {
-    opacity: 0;
-    transform: translateY(80px);
+    // opacity: 0;
+    transform: translateY(100px);
+    background-color: white;
   }
 
   & i {
@@ -111,6 +112,7 @@ export const ChatsWindow = styled.form`
   }
 
   & input {
+    background-color: white;
     padding: 14px;
     width: 80%;
     margin-right:10px;
@@ -121,8 +123,8 @@ export const ChatsWindow = styled.form`
   }
 
   & input:focus {
-    width: 98vw;
-    transform: translateX(-13%) translateY(-80px);
+    width: 75vw;
+    transform: translateY(-80px);
   }
 
   & button {

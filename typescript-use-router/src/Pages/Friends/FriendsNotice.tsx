@@ -8,8 +8,8 @@ type FriendNoticProps = {
 export default ({ noticeText } : FriendNoticProps) => {
   // const noticeText = 'Friends\' Names Display';
 
-  const noticeEventHandler = () => {
-    console.log('Notice Event Handler');
+  const noticeEventHandler = (event:React.MouseEvent) => {
+    event.preventDefault();
   };
 
   return (

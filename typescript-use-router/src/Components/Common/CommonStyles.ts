@@ -15,3 +15,22 @@ export const Badge = styled.span`
 export const CommonWrap = styled.main`
   padding: 0px 25px;
 `;
+
+export const IconRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  &div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &div i {
+    font-size: 35px;
+  }
+
+  &div span {
+    margin-top: 18px;
+  }
+`;
