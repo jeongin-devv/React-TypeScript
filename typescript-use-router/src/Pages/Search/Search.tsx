@@ -1,10 +1,33 @@
 import React from 'react';
-import { CommonWrap, CommonIconRow } from '../../Components/Common/CommonStyles';
+import { CommonWrap } from '../../Components/Common/CommonStyles';
+import SearchIconRow, { IconInfo } from './SearchIconRow';
+import SearchRecommended from './SearchRecommended';
 
-const Find = () => (
+const iconList : IconInfo[] = [
+  {
+    name: 'QR Code',
+    src: 'fas fa-qrcode',
+  },
+  {
+    name: 'Add by Contacts',
+    src: 'far fa-address-book',
+  },
+  {
+    name: 'Add by ID',
+    src: 'fas fa-fingerprint',
+  },
+  {
+    name: 'Invite',
+    src: 'far fa-envelope',
+  },
+
+];
+
+const Search = () => (
   <CommonWrap>
-    <CommonIconRow />
+    <SearchIconRow iconList={iconList} />
+    <SearchRecommended />
   </CommonWrap>
 );
 
-export default Find;
+export default Search;

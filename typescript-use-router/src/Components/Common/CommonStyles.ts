@@ -19,18 +19,18 @@ export const CommonWrap = styled.main`
 export const CommonIconRow = styled.div`
   display: flex;
   justify-content: space-between;
+`;
 
-  &div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+export const CommonIconComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &div i {
+  & i {
     font-size: 35px;
   }
 
-  &div span {
+  & span {
     margin-top: 18px;
   }
 `;
