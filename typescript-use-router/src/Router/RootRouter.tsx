@@ -5,6 +5,7 @@ import Login from '../Pages/Login/Login';
 import FriendsRoute from './Routes/FriendsRoute';
 import ChatsRoute from './Routes/ChatsRoute';
 import ChatsDetailRoute from './Routes/ChatsDetailRoute';
+import SearchRoute from './Routes/SearchRoute';
 
 const rootElement = <Login />;
 
@@ -18,6 +19,7 @@ const RootRouter = () => useRoutes([
   FriendsRoute,
   ChatsRoute,
   ChatsDetailRoute,
+  SearchRoute,
 ]);
 
 export default RootRouter;
