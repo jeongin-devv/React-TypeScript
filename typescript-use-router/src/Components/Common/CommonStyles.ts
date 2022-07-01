@@ -16,7 +16,7 @@ export const CommonWrap = styled.main`
   padding: 0px 25px;
 `;
 
-export const IconRow = styled.div`
+export const CommonIconRow = styled.div`
   display: flex;
   justify-content: space-between;
 

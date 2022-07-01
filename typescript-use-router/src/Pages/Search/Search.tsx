@@ -1,10 +1,10 @@
 import React from 'react';
+import { CommonWrap, CommonIconRow } from '../../Components/Common/CommonStyles';
 
-const Find = () => {
-  const text = 'd';
-  return (
-    <div>{text}</div>
-  );
-};
+const Find = () => (
+  <CommonWrap>
+    <CommonIconRow />
+  </CommonWrap>
+);
 
 export default Find;

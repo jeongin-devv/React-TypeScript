@@ -13,5 +13,5 @@ export const SearchRecommended = styled.div`
 `;
 
 export const SearchOpenChat = styled.div`
-  
+
 `;
