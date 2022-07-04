@@ -7,7 +7,12 @@ import {
 export default () => (
   <SearchOpenPost>
     <SearchOpenPostColumn>
-      SearchOpenPostTitle
+      <SearchOpenPostTitle>
+        #BTS
+      </SearchOpenPostTitle>
+      <SearchOpenPostHashtags>
+        #bts#army#friends
+      </SearchOpenPostHashtags>
     </SearchOpenPostColumn>
     <SearchOpenPostColumn>
       asfsad
