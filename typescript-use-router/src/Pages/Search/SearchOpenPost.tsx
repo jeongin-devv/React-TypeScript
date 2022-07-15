@@ -1,21 +1,22 @@
 import React from 'react';
 import {
-  SearchOpenPost, SearchOpenPostColumn, SearchOpenPostTitle,
-  SearchOpenPostHashtags,
+  SearchOpenPost, SearchOpenPostColumn,
 } from './SearchStyles';
+
+import SearchOpenPostTitle from './SearchOpenPostTitle';
+import SearchOpenPostHashtag from './SearchOpenPostHashtag';
+import SearchOpenPostInfo from './SearchOpenPostInfo';
+import SearchOpenPostPhoto from './SearchOpenPostPhoto';
 
 export default () => (
   <SearchOpenPost>
     <SearchOpenPostColumn>
-      <SearchOpenPostTitle>
-        #BTS
-      </SearchOpenPostTitle>
-      <SearchOpenPostHashtags>
-        #bts#army#friends
-      </SearchOpenPostHashtags>
+      <SearchOpenPostTitle />
+      <SearchOpenPostHashtag />
+      <SearchOpenPostInfo />
     </SearchOpenPostColumn>
     <SearchOpenPostColumn>
-      asfsad
+      <SearchOpenPostPhoto />
     </SearchOpenPostColumn>
   </SearchOpenPost>
 );

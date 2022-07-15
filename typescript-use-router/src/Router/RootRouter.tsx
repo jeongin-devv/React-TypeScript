@@ -6,6 +6,7 @@ import FriendsRoute from './Routes/FriendsRoute';
 import ChatsRoute from './Routes/ChatsRoute';
 import ChatsDetailRoute from './Routes/ChatsDetailRoute';
 import SearchRoute from './Routes/SearchRoute';
+import MoreRoute from './Routes/MoreRoute';
 
 const rootElement = <Login />;
 
@@ -20,6 +21,7 @@ const RootRouter = () => useRoutes([
   ChatsRoute,
   ChatsDetailRoute,
   SearchRoute,
+  MoreRoute,
 ]);
 
 export default RootRouter;

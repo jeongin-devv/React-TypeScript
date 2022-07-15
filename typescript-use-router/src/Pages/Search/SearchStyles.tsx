@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const SearchRecommended = styled.div`
   text-align: left;
@@ -49,11 +49,13 @@ export const SearchOpenPostColumn = styled.div`
 export const SearchOpenPostTitle = styled.h5`
   font-weight: 600;
   margin-bottom: 7px;
+  text-align:left;
 `;
 
 export const SearchOpenPostHashtags = styled.h6`
   text-transform: uppercase;
   opacity: 0.6;
+  text-align:left;
 `;
 
 export const SearchOpenPostMembers = styled.div`
@@ -83,4 +85,51 @@ export const SearchOpenPostMembersDivider = styled.div`
 
 export const SearchOpenPostMembersStatus = styled.span`
   color: #ffb0e0;
+`;
+
+export const SearchOpenPostPhoto = styled.div`
+  position: relative;
+
+  & img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+  }
+`;
+
+const heartBeat = keyframes`
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+`;
+
+export const SearchOpenPostLike = styled.div`
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+
+  & span {
+    margin-left: 3px;
+  }
+
+  &:hover i {
+    will-change: transform;
+    animation: ${heartBeat} 1s linear infinite;
+  }
 `;

@@ -2,6 +2,7 @@ import React from 'react';
 import { CommonWrap } from '../../Components/Common/CommonStyles';
 import SearchIconRow, { IconInfo } from './SearchIconRow';
 import SearchRecommended from './SearchRecommended';
+import SearchOpenChat from './SearchOpenChat';
 
 const iconList : IconInfo[] = [
   {
@@ -27,6 +28,7 @@ const Search = () => (
   <CommonWrap>
     <SearchIconRow iconList={iconList} />
     <SearchRecommended />
+    <SearchOpenChat />
   </CommonWrap>
 );
 
