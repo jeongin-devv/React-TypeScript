@@ -1,5 +1,6 @@
-import { Component } from 'react'
-import { useSelector, useDispatch, connect } from 'react-redux';
+// import { Component } from 'react'
+// import { useSelector, useDispatch, connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 // Class Component 에선 connect 함수를 사용할 수 있다.
 // 사용 해본 결과, Mobx를 사용 할 때와 비슷한 느낌을 받는다.
 import classes from './Counter.module.css';
