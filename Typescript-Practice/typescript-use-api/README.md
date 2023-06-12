@@ -1,2 +1,2 @@
-## TypeScript Movie App
+## TypeScript Example
 ***
