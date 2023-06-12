@@ -1,1 +1,1 @@
-## Nextjs basic Pratice
+## Nextjs basic Function Example
